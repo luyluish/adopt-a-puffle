@@ -1,0 +1,30 @@
+header {
+    text-align: center;
+}
+
+label {
+    display: block;
+}
+
+input {
+    display: block;
+    width: 100%;
+    min-height: 2em;
+    margin: 0.5em 0;
+    padding-left: 4px;
+}
+
+input[type="text"], input[type="email"] {
+    max-width: 20rem;
+}
+
+input[type="number"] {
+    max-width: 3rem;
+}
+
+fieldset {
+    width: 50vw;
+    max-width: 600px;
+    max-height: 1000px;
+    margin: auto auto;
+}
