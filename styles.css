@@ -1,5 +1,14 @@
+body {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('assets/puffles.png');
+    background-size: cover;
+    color: white;
+    text-shadow: 1.5px 1.5px black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 header {
     text-align: center;
+    font-size: 24px;
 }
 
 label {
@@ -12,6 +21,12 @@ input {
     min-height: 2em;
     margin: 0.5em 0;
     padding-left: 4px;
+}
+
+select {
+    display: block;
+    min-height: 2em;
+    margin: 0.5em 0;
 }
 
 input[type="text"], input[type="email"] {
@@ -27,4 +42,11 @@ fieldset {
     max-width: 600px;
     max-height: 1000px;
     margin: auto auto;
+    border-radius: 10px;
+    border-width: 0;
+    background-color: darkslateblue;
+}
+
+legend {
+    text-align: center;
 }
