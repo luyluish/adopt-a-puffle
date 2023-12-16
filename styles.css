@@ -11,6 +11,10 @@ header {
     font-size: 24px;
 }
 
+form {
+    text-align: center;
+}
+
 label {
     display: block;
 }
@@ -19,23 +23,49 @@ input {
     display: block;
     width: 100%;
     min-height: 2em;
-    margin: 0.5em 0;
+    margin: 0.5em auto;
     padding-left: 4px;
 }
 
 select {
     display: block;
-    min-height: 2em;
-    margin: 0.5em 0;
+    min-height: 2.5em;
+    margin: 0.5em auto;
+    border-radius: 5px;
+    background-color: #15092C;
+    color: white;
 }
 
 input[type="text"], input[type="email"] {
     max-width: 20rem;
+    border-radius: 5px;
+    background-color: #15092C;
+    color: white;
 }
 
 input[type="number"] {
     max-width: 3rem;
+    border-radius: 5px;
+    background-color: #15092C;
+    color: white;
 }
+
+input[type="submit"] {
+    display: block;
+    width: 30%;
+    margin: auto auto;
+    height: 2em;
+    color: white;
+    font-size: 1.1rem;
+    background-color: #1b1f36;
+    border-color: rgb(255, 255, 255);
+    min-width: 100px;
+    border-radius: 5px;
+  }
+
+  #submit:hover {
+    background-color: #2f3656;
+  }
 
 #information, fieldset {
     display: block;
@@ -47,7 +77,7 @@ input[type="number"] {
     border-width: 0;
     background-color: darkslateblue;
     padding-top: 0.35em;
-    padding-bottom: 0.625em;
+    padding-bottom: 1em;
     padding-left: 0.75em;
     padding-right: 0.75em;
     box-sizing: border-box;
@@ -55,7 +85,6 @@ input[type="number"] {
 
 .container {
     display: inline-block;
-    align-items: normal;
     align-items: center;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 1em;
@@ -70,15 +99,25 @@ img {
     align-self: center;
 }
 
+.image2 {
+    max-width: 35%;
+}
+
+.image3 {
+    max-width: 40%;
+    margin: 5% auto;
+}
+
 .grid-container {
     background-color: darkslateblue;
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 10px 10px;
     flex-wrap: wrap;
     width: 100%;
-    max-width: 1000px;
-    max-height: 1000px;
+    height: 100%;
+    max-width: max-content;
+    max-height: max-content;
     border-radius: 10px;
     border-width: 0;
     margin: auto auto;
@@ -89,12 +128,16 @@ img {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    margin: 1em 0;
+    flex-wrap: wrap;
     text-align: center;
-    max-width: 300px;
-    max-height: 400px;
+    max-width: 200px;
+    max-height: 300px;
     border-radius: 10px;
     border-width: 0;
+}
+
+.normal-img {
+    margin-inline-end: 1em;
 }
 
 .puffle-img {
@@ -102,18 +145,65 @@ img {
     min-height: none;
     max-width: 70%;
     max-height: 70%;
-    margin-top: 1em;
-    margin-bottom: -0em;
+    margin-bottom: -1em;
+    object-fit: contain;
+}
+
+.puffle-text {
+    
+    word-wrap: break-word;
+    text-wrap: balance;
 }
 
 .blue {
-    background-color: rgba(0, 190, 230, 1);
+    background-color: rgba(30, 178, 207, 0.812);
 }
 
 .black {
-    background-color: rgba(45, 45, 45, 1);
+    background-color: rgba(45, 45, 45, 0.823);
+}
+
+.brown {
+    background-color: rgba(82, 50, 17, 0.818);
+}
+
+.green {
+    background-color: rgba(3, 179, 53, 0.716);
+}
+
+.orange {
+    background-color: rgba(255, 106, 31, 0.763);
+}
+
+.pink {
+    background-color: rgba(239, 107, 239, 0.808);
+}
+
+.purple {
+    background-color: rgba(157, 6, 203, 0.747);
+}
+
+.red {
+    background-color: rgba(213, 18, 18, 0.837);
+}
+
+.white {
+    background-color: rgba(176, 217, 244, 0.855);
+}
+
+.yellow {
+    background-color: rgb(218, 218, 8);
 }
 
 h2, h3 {
     text-align: center;
+}
+
+h2 {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.607);
+    padding-bottom: 2px;
+}
+
+li {
+    margin-left: 22em;
 }

@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <h1>Adopt A Puffle</h1>
+        <h1 id="title">Adopt A Puffle</h1>
         <p id="description">Puffles are lovely creatures you can play with. How about adopting one that fits with your personality?</p>
     </header>
     <main>
@@ -18,10 +18,17 @@
 
             <div class="container">
                 <div class="image">
-                    <img src="assets/beta_puffles.png" alt="Beta Puffles concept art.">
+                    <img src="assets/beta_puffles.png" alt="Beta Puffles concept art." class="normal-img">
                 </div>
                 <div class="text">
                     <p>Puffles had many different concepts in the early stages of Club Penguin, before they could reach the design we know now (the fluffy ball things). Notice how they all have a similarity: The fur, in order to contrast the penguins' "skininess".</p>
+                    <p>In order to take care of your new friend, here's some things you can do to make them happy:</p>
+                    <ul>
+                        <li>Take them for a walk around the island</li>
+                        <li>Feed them with their favorite food (each species has a different one)</li>
+                        <li>Play alongside them in minigames (they like to go with you!)</li>
+                        <li>Buy some toys so they can play when you're out</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -33,27 +40,52 @@
                 <div class="card black">
                     <img src="assets/black_puffle.png" class="puffle-img">
                     <h2>Black Puffle</h2>
-                    <p>These little guys are chill and like to stay on their own vibe, but when things get spicy they get on the mood real fast!</p>
+                    <p class="puffle-text">Grumpy and chill, but gets in the mood really fast!</p>
                 </div>
                 <div class="card blue">
                     <img src="assets/blue_puffle.png" class="puffle-img">
                     <h2>Blue Puffle</h2>
-                    <p>The blue ones are usually </p>
+                    <p class="puffle-text">The blue ones are usually jolly, friendly and loyal.</p>
                 </div>
                 <div class="card brown">
-                    <img src="assets/beta_puffles.png">
-                    <p>oapsjeopaseas</p>
-                    <p>djopeasopejsa</p>
+                    <img src="assets/brown_puffle.png" class="puffle-img">
+                    <h2>Brown Puffle</h2>
+                    <p class="puffle-text">Fluffy geniuses, the most inventive of puffles.</p>
                 </div>
                 <div class="card green">
-                    <img src="assets/beta_puffles.png">
-                    <p>oapsjeopaseas</p>
-                    <p>djopeasopejsa</p>
+                    <img src="assets/green_puffle.png" class="puffle-img">
+                    <h2>Green Puffle</h2>
+                    <p class="puffle-text">Pretty energetic and playful, much like clowns!</p>
                 </div>
                 <div class="card orange">
-                    <img src="assets/beta_puffles.png">
-                    <p>oapsjeopaseas</p>
-                    <p>djopeasopejsa</p>
+                    <img src="assets/orange_puffle.png" class="puffle-img">
+                    <h2>Orange Puffle</h2>
+                    <p class="puffle-text">completly insane.</p>
+                </div>
+                <div class="card pink">
+                    <img src="assets/pink_puffle.png" class="puffle-img">
+                    <h2>Pink Puffle</h2>
+                    <p class="puffle-text">Atheltic and very cheerful! Yay!</p>
+                </div>
+                <div class="card purple">
+                    <img src="assets/purple_puffle.png" class="puffle-img">
+                    <h2>Purple Puffle</h2>
+                    <p class="puffle-text">The true pop stars of the puffle ecosystem.</p>
+                </div>
+                <div class="card red">
+                    <img src="assets/red_puffle.png" class="puffle-img">
+                    <h2>Red Puffle</h2>
+                    <p class="puffle-text">Always looking for adventure, just like a pirate!</p>
+                </div>
+                <div class="card white">
+                    <img src="assets/white_puffle.png" class="puffle-img">
+                    <h2>White Puffle</h2>
+                    <p class="puffle-text">Shy and quiet, also has a chilly ice breath!</p>
+                </div>
+                <div class="card yellow">
+                    <img src="assets/yellow_puffle.png" class="puffle-img">
+                    <h2>Yellow Puffle</h2>
+                    <p class="puffle-text">Really creative, they love to paint and act in stages.</p>
                 </div>
             </div>
 
@@ -61,14 +93,24 @@
         <form id="survey-form">
             <fieldset>
                 <h2>Adopter Info</h2>
-                <label for="name">Enter your name: <input id="name" name="name" type="text" required></label>
-                <label for="email">Enter your email address: <input id="email" name="email" type="email" required></label>
-                <label for="number">Your age: <input id="number" name="number" type="number" min="7" max="120" required></label>
+                <h3>Got interested? Give us some information about you:</h3>
+                <div class="container">
+                    <div class="image2">
+                        <img src="assets/dot.png" alt="Dot, the fashion spy." class="normal-img">
+                    </div>
+                    <div class="labels">
+                        <label for="name" id="name-label">Enter your name: <input id="name" name="name" type="text" placeholder="Your very own name" required></label>
+                        <label for="email" id="email-label">Enter your email address: <input id="email" name="email" type="email" placeholder="address@domain.com" required></label>
+                        <label for="number" id="number-label">Your age: <input id="number" name="number" type="number" min="7" max="120" placeholder="7-120" required></label>
+                    </div>
+                </div>
             </fieldset>
             <fieldset>
-                <h2>Puffle Info</h2></legend>
-                <label for="dropdown">Which color of puffle do you want to adopt? (Each one has a different personality!)
-                    <select id="dropdown" name="dropdown">
+                <h2>Puffle Info</h2>
+                <h3>Now, specify your new friend's information:</h3>
+                <label for="puffle-name">Your puffle's name: <input id="puffle-name" name="puffle-name" type="text" placeholder="Please choose a cool name" required></label>
+                <label for="dropdown">Puffle's Color:
+                    <select id="dropdown" name="dropdown" required>
                         <option value="">(select a color)</option>
                         <option value="1">Black</option>
                         <option value="2">Blue</option>
@@ -82,6 +124,10 @@
                         <option value="10">Yellow</option>
                     </select>
                 </label>
+                <div class="image3">
+                    <img src="assets/originalpuffles.png" alt="Beta Puffles concept art." class="normal-img">
+                </div>
+                <input type="submit" value="Submit" id="submit"/>
             </fieldset>
         </form>
     </main>
