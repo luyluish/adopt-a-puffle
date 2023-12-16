@@ -25,6 +25,10 @@ input {
     min-height: 2em;
     margin: 0.5em auto;
     padding-left: 4px;
+    border-color: #2F175B;
+    border-top: 1px;
+    border-left: 1px;
+    border: 2px solid #2F175B;
 }
 
 select {
@@ -32,21 +36,21 @@ select {
     min-height: 2.5em;
     margin: 0.5em auto;
     border-radius: 5px;
-    background-color: #15092C;
+    background-color: #2F175B;
     color: white;
 }
 
 input[type="text"], input[type="email"] {
     max-width: 20rem;
     border-radius: 5px;
-    background-color: #15092C;
+    background-color: #2F175B;
     color: white;
 }
 
 input[type="number"] {
     max-width: 3rem;
     border-radius: 5px;
-    background-color: #15092C;
+    background-color: #2F175B;
     color: white;
 }
 
@@ -57,14 +61,14 @@ input[type="submit"] {
     height: 2em;
     color: white;
     font-size: 1.1rem;
-    background-color: #1b1f36;
+    background-color: #2d1c4c;
     border-color: rgb(255, 255, 255);
     min-width: 100px;
     border-radius: 5px;
   }
 
   #submit:hover {
-    background-color: #2f3656;
+    background-color: #4a2974;
   }
 
 #information, fieldset {
@@ -134,6 +138,7 @@ img {
     max-height: 300px;
     border-radius: 10px;
     border-width: 0;
+    box-shadow: 2px 2px 5px #24173d;
 }
 
 .normal-img {
