@@ -1,4 +1,4 @@
-<h1>Adopt a Puffle</h1>
+<h1>Adopt-A-Puffle</h1>
 The first HTML/CSS project I made, with the goal of putting in practice the basics I have learnt while studying from different sources on the internet.
 
 <h2>📑About the Project</h2>
