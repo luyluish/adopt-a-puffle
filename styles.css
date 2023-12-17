@@ -19,16 +19,17 @@ label {
     display: block;
 }
 
-input {
+input, textarea {
     display: block;
     width: 100%;
     min-height: 2em;
     margin: 0.5em auto;
     padding-left: 4px;
     border-color: #2F175B;
-    border-top: 1px;
-    border-left: 1px;
-    border: 2px solid #2F175B;
+    background-color: #2F175B;
+    color: white;
+    border: 5px solid #2F175B;
+    border-radius: 5px;
 }
 
 select {
@@ -37,21 +38,16 @@ select {
     margin: 0.5em auto;
     border-radius: 5px;
     background-color: #2F175B;
+    border-color: #2F175B;
     color: white;
 }
 
 input[type="text"], input[type="email"] {
     max-width: 20rem;
-    border-radius: 5px;
-    background-color: #2F175B;
-    color: white;
 }
 
 input[type="number"] {
     max-width: 3rem;
-    border-radius: 5px;
-    background-color: #2F175B;
-    color: white;
 }
 
 input[type="submit"] {
@@ -61,7 +57,7 @@ input[type="submit"] {
     height: 2em;
     color: white;
     font-size: 1.1rem;
-    background-color: #2d1c4c;
+    background-color: #2F175B;
     border-color: rgb(255, 255, 255);
     min-width: 100px;
     border-radius: 5px;
@@ -210,4 +206,30 @@ h2 {
 
 li {
     margin-left: 22em;
+}
+
+.inline {
+    display: table;
+    vertical-align: -6px;
+    padding-top: 2px;
+    width: 100%;
+}
+
+textarea {
+    max-width: 50%;
+    max-height: 200px;
+    resize: none;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    display: table-column-group;
+    table-layout: fixed;
+    text-align: start;
+    align-content: start;
+    width: 30px;
+    clear: none;
+    max-width: 50%;
+    max-height: 50%;
+    background-color: black;
+    margin-bottom: 2px;
 }
